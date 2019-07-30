@@ -1,0 +1,9 @@
+<ul>
+  <h1> <%= @task.title %> </h1>
+  <li> <%= @task.details %></li>
+  <li> <%= @task.completed %></li>
+  <li> <%= link_to "View next", tasks_show_path(@task.id+1) %></li>
+  <li> <%= link_to "View previous", tasks_show_path(@task.id-1) %></li>
+  <li> <%= link_to "View all", tasks_index_path %></li>
+  <br>
+</ul>
